@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_poem"
+    android:layoutDirection="ltr"
+    tools:context=".FalActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/againBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        app:cardBackgroundColor="#85714E"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rightTitleBorder2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/falBackBtn"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <TextView
+            android:id="@+id/againTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/b_kourosh"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="فال مجدد"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/falBackBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        app:cardBackgroundColor="#85714E"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/againBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/leftTitleBorder2"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <TextView
+            android:id="@+id/falBackTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/b_kourosh"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="بازگشت"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/rightTitleBorder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/poemNameTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title_border" />
+
+    <ImageView
+        android:id="@+id/leftTitleBorder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="40dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toStartOf="@+id/poemNameTxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title_border" />
+
+    <TextView
+        android:id="@+id/poemNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/b_kourosh"
+        android:text="غزل شماره 25 "
+        android:textColor="#85714E"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rightTitleBorder"
+        app:layout_constraintEnd_toStartOf="@+id/rightTitleBorder"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/leftTitleBorder"
+        app:layout_constraintTop_toTopOf="@+id/leftTitleBorder" />
+
+    <TextView
+        android:id="@+id/poemBodyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/b_kourosh"
+        android:isScrollContainer="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:text="ابیات شعر"
+        android:textColor="#85714E"
+        android:textSize="14dp"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintBottom_toTopOf="@+id/descriptTitleTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poemNameTxt" />
+
+    <ImageView
+        android:id="@+id/leftTitleBorder2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginBottom="30dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toTopOf="@+id/descrpitBodyTxt"
+        app:layout_constraintEnd_toStartOf="@+id/descriptTitleTxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/title_border" />
+
+    <ImageView
+        android:id="@+id/rightTitleBorder2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/descrpitBodyTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/descriptTitleTxt"
+        app:srcCompat="@drawable/title_border" />
+
+    <TextView
+        android:id="@+id/descriptTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/b_kourosh"
+        android:text="تعبیر فال شما"
+        android:textColor="#85714E"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rightTitleBorder2"
+        app:layout_constraintEnd_toStartOf="@+id/rightTitleBorder2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/leftTitleBorder2"
+        app:layout_constraintTop_toTopOf="@+id/leftTitleBorder2" />
+
+    <TextView
+        android:id="@+id/descrpitBodyTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/b_kourosh"
+        android:isScrollContainer="true"
+        android:scrollbarStyle="insideInset"
+        android:text="تفسیر فال"
+        android:textColor="#85714E"
+        android:textSize="14dp"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintBottom_toTopOf="@+id/falBackBtn"
+        app:layout_constraintEnd_toEndOf="@+id/poemBodyTxt"
+        app:layout_constraintStart_toStartOf="@+id/poemBodyTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
