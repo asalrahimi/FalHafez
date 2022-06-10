@@ -12,7 +12,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/againBtn"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="30dp"
         android:clickable="true"
@@ -26,22 +26,21 @@
 
         <TextView
             android:id="@+id/againTxt"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/b_kourosh"
+            android:fontFamily="@font/dima"
             android:foregroundGravity="center"
             android:gravity="center"
             android:text="فال مجدد"
             android:textColor="#ffffff"
-            android:textSize="18dp" />
+            android:textSize="19dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/falBackBtn"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="0dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="30dp"
         android:clickable="true"
@@ -56,15 +55,15 @@
 
         <TextView
             android:id="@+id/falBackTxt"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/b_kourosh"
+            android:fontFamily="@font/dima"
             android:foregroundGravity="center"
             android:gravity="center"
             android:text="بازگشت"
             android:textColor="#ffffff"
-            android:textSize="18dp" />
+            android:textSize="19dp" />
     </androidx.cardview.widget.CardView>
 
     <ImageView
@@ -96,8 +95,8 @@
     <TextView
         android:id="@+id/poemNameTxt"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:fontFamily="@font/b_kourosh"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dima"
         android:text="غزل شماره 25 "
         android:textColor="#85714E"
         android:textSize="28dp"
@@ -113,18 +112,18 @@
         android:layout_height="0dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp"
-        android:fontFamily="@font/b_kourosh"
+        android:fontFamily="@font/dima"
         android:isScrollContainer="true"
         android:scrollbarStyle="insideInset"
         android:scrollbars="vertical"
         android:text="ابیات شعر"
         android:textColor="#85714E"
-        android:textSize="14dp"
+        android:textSize="18dp"
         android:verticalScrollbarPosition="right"
         app:layout_constraintBottom_toTopOf="@+id/descriptTitleTxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/poemNameTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/rightTitleBorder" />
 
     <ImageView
         android:id="@+id/leftTitleBorder2"
@@ -155,11 +154,12 @@
     <TextView
         android:id="@+id/descriptTitleTxt"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:fontFamily="@font/b_kourosh"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dima"
         android:text="تعبیر فال شما"
         android:textColor="#85714E"
         android:textSize="28dp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/rightTitleBorder2"
         app:layout_constraintEnd_toStartOf="@+id/rightTitleBorder2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -171,12 +171,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:fontFamily="@font/b_kourosh"
+        android:fontFamily="@font/dima"
         android:isScrollContainer="true"
         android:scrollbarStyle="insideInset"
         android:text="تفسیر فال"
         android:textColor="#85714E"
-        android:textSize="14dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
         android:verticalScrollbarPosition="right"
         app:layout_constraintBottom_toTopOf="@+id/falBackBtn"
         app:layout_constraintEnd_toEndOf="@+id/poemBodyTxt"

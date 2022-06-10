@@ -8,6 +8,17 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:id="@+id/titleHolderImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@id/biographyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title_holder" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/falBtn"
         android:layout_width="0dp"
@@ -28,10 +39,10 @@
 
         <TextView
             android:id="@+id/falTxt"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/b_kourosh"
+            android:fontFamily="@font/dima"
             android:gravity="center"
             android:text="فال حافظ"
             android:textColor="#FFFFFF"
@@ -55,10 +66,10 @@
 
         <TextView
             android:id="@+id/biographyTxt"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/b_kourosh"
+            android:fontFamily="@font/dima"
             android:foregroundGravity="center"
             android:gravity="center"
             android:text="معرفی شاعر"
@@ -70,14 +81,13 @@
         android:id="@+id/mainTitleTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
-        android:fontFamily="@font/b_kourosh"
+        android:fontFamily="@font/dima"
         android:gravity="center"
         android:text="حافظ"
         android:textColor="#01BFAE"
-        android:textSize="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleHolderImg"
+        app:layout_constraintEnd_toEndOf="@id/titleHolderImg"
+        app:layout_constraintStart_toStartOf="@+id/titleHolderImg"
+        app:layout_constraintTop_toTopOf="@+id/titleHolderImg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

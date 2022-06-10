@@ -11,7 +11,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/bioBackBtn"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="20dp"
@@ -27,22 +27,22 @@
 
         <TextView
             android:id="@+id/falBackTxt"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/b_kourosh"
+            android:fontFamily="@font/dima"
             android:foregroundGravity="center"
             android:gravity="center"
             android:text="بازگشت"
             android:textColor="#ffffff"
-            android:textSize="18dp" />
+            android:textSize="19dp" />
     </androidx.cardview.widget.CardView>
 
     <ImageView
         android:id="@+id/rightTitleBorder3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="95dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -55,7 +55,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="95dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="100dp"
         android:rotation="180"
         app:layout_constraintEnd_toStartOf="@+id/bioTitleTxt"
         app:layout_constraintHorizontal_bias="0.5"
@@ -67,8 +67,8 @@
     <TextView
         android:id="@+id/bioTitleTxt"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:fontFamily="@font/b_kourosh"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dima"
         android:text="معرفی شاعران"
         android:textColor="#85714E"
         android:textSize="28dp"
@@ -83,11 +83,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:paddingStart="5dp"
-        app:cardBackgroundColor="#72FFFFFF"
+        app:cardBackgroundColor="#41FFFFFF"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/bioBackBtn"
         app:layout_constraintEnd_toEndOf="parent"

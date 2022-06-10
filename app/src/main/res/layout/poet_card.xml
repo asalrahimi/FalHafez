@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/poetBioCard"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="140dp"
     android:layout_marginStart="10dp"
     android:layout_marginTop="0dp"
     android:layout_marginEnd="10dp"
@@ -22,14 +22,15 @@
 
         <TextView
             android:id="@+id/poetNameTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/b_kourosh"
+            android:fontFamily="@font/dima"
+            android:foregroundGravity="center"
             android:gravity="center"
             android:text="نام شاعر"
             android:textColor="#85714E"
-            android:textSize="20dp" />
+            android:textSize="24dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,33 +45,33 @@
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/b_kourosh"
+                android:fontFamily="@font/dima"
                 android:gravity="center"
                 android:text="زادگاه :"
                 android:textColor="#85714E"
-                android:textSize="14dp" />
+                android:textSize="12dp" />
 
             <TextView
                 android:id="@+id/poetDeathTxt"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/b_kourosh"
+                android:fontFamily="@font/dima"
                 android:gravity="center"
                 android:text="تاریخ وفات(هجری) :"
                 android:textColor="#85714E"
-                android:textSize="14dp" />
+                android:textSize="12dp" />
 
             <TextView
                 android:id="@+id/poetBirthTxt"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/b_kourosh"
+                android:fontFamily="@font/dima"
                 android:gravity="center"
                 android:text="تاریخ تولد(هجری) :"
                 android:textColor="#85714E"
-                android:textSize="14dp" />
+                android:textSize="12dp" />
 
         </LinearLayout>
 
@@ -79,7 +80,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/b_kourosh"
             android:gravity="center"
             android:text="----------------------------------------------------"
             android:textColor="#85714E"
