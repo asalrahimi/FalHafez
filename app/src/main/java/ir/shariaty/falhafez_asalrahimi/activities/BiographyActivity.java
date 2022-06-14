@@ -1,8 +1,7 @@
-package ir.shariaty.falhafez_asalrahimi;
+package ir.shariaty.falhafez_asalrahimi.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;

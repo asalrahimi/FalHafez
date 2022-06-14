@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back_bio"
     android:layoutDirection="ltr"
-    tools:context=".BiographyActivity">
+    tools:context=".activities.BiographyActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/bioBackBtn"

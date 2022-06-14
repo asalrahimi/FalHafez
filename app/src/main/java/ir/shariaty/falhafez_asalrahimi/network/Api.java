@@ -8,12 +8,10 @@ public class Api {
     public static Retrofit instance;
 
     public static Retrofit getRetrofit() {
-        if (instance == null) {
             instance = new Retrofit.Builder()
-                    .baseUrl("https://ganjgah.ir/api/ganjoor/")
+                    .baseUrl("https://api.ganjoor.net/api/ganjoor/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
-        }
         return instance;
     }
 }

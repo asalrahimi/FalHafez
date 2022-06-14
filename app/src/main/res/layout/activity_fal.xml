@@ -6,8 +6,24 @@
     android:layout_height="match_parent"
     android:background="@drawable/back_poem"
     android:layoutDirection="ltr"
-    tools:context=".FalActivity">
+    tools:context=".activities.FalActivity">
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rightRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:foregroundGravity="center_vertical|right"
+        android:layoutDirection="ltr"
+        android:textAlignment="gravity"
+        android:textDirection="rtl"
+        app:layout_constraintBottom_toTopOf="@+id/descriptTitleTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/leftRv"
+        app:layout_constraintTop_toBottomOf="@+id/poemNameTxt" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/againBtn"
@@ -70,7 +86,7 @@
         android:id="@+id/rightTitleBorder"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="95dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -83,7 +99,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="95dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:rotation="180"
         app:layout_constraintEnd_toStartOf="@+id/poemNameTxt"
         app:layout_constraintHorizontal_bias="0.5"
@@ -97,7 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dima"
-        android:text="غزل شماره 25 "
+        android:text="غزل شماره "
         android:textColor="#85714E"
         android:textSize="28dp"
         app:layout_constraintBottom_toBottomOf="@+id/rightTitleBorder"
@@ -106,31 +122,12 @@
         app:layout_constraintStart_toEndOf="@+id/leftTitleBorder"
         app:layout_constraintTop_toTopOf="@+id/leftTitleBorder" />
 
-    <TextView
-        android:id="@+id/poemBodyTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="40dp"
-        android:fontFamily="@font/dima"
-        android:isScrollContainer="true"
-        android:scrollbarStyle="insideInset"
-        android:scrollbars="vertical"
-        android:text="ابیات شعر"
-        android:textColor="#85714E"
-        android:textSize="18dp"
-        android:verticalScrollbarPosition="right"
-        app:layout_constraintBottom_toTopOf="@+id/descriptTitleTxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rightTitleBorder" />
-
     <ImageView
         android:id="@+id/leftTitleBorder2"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="95dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         android:rotation="180"
         app:layout_constraintBottom_toTopOf="@+id/descrpitBodyTxt"
         app:layout_constraintEnd_toStartOf="@+id/descriptTitleTxt"
@@ -144,7 +141,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="95dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/descrpitBodyTxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -156,7 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dima"
-        android:text="تعبیر فال شما"
+        android:text="شرح فال"
         android:textColor="#85714E"
         android:textSize="28dp"
         android:textStyle="normal"
@@ -170,17 +167,32 @@
         android:id="@+id/descrpitBodyTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/dima"
         android:isScrollContainer="true"
         android:scrollbarStyle="insideInset"
         android:text="تفسیر فال"
         android:textColor="#85714E"
-        android:textSize="18dp"
+        android:textSize="12dp"
         android:textStyle="bold"
         android:verticalScrollbarPosition="right"
         app:layout_constraintBottom_toTopOf="@+id/falBackBtn"
-        app:layout_constraintEnd_toEndOf="@+id/poemBodyTxt"
-        app:layout_constraintStart_toStartOf="@+id/poemBodyTxt" />
+        app:layout_constraintEnd_toEndOf="@+id/rightRv"
+        app:layout_constraintStart_toStartOf="@+id/leftRv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leftRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:foregroundGravity="left|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/descriptTitleTxt"
+        app:layout_constraintEnd_toStartOf="@+id/rightRv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poemNameTxt">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

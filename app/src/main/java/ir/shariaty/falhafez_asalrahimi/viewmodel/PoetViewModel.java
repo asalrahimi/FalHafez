@@ -1,13 +1,10 @@
 package ir.shariaty.falhafez_asalrahimi.viewmodel;
 
-import android.widget.Toast;
-
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import java.util.List;
 
-import ir.shariaty.falhafez_asalrahimi.BiographyActivity;
 import ir.shariaty.falhafez_asalrahimi.model.Poet;
 import ir.shariaty.falhafez_asalrahimi.network.Api;
 import ir.shariaty.falhafez_asalrahimi.network.PoetPlaceHolderApi;
@@ -30,7 +27,7 @@ public class PoetViewModel extends ViewModel {
         return poetList;
     }
 
-    // ** function for fetch data and set response in a list
+    // ** function for fetch data and set response in poetList
     public void makeApiCall(){
         PoetPlaceHolderApi poetPlaceHolderApi = Api.getRetrofit().create(PoetPlaceHolderApi.class);
         Call<List<Poet>> call = poetPlaceHolderApi.getPoets();

@@ -1,4 +1,4 @@
-package ir.shariaty.falhafez_asalrahimi;
+package ir.shariaty.falhafez_asalrahimi.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
